@@ -35,7 +35,15 @@ public interface IThemeView {
 
     /**
      * 加载布局文件
+     *
      * @return
      */
     View inflateLayoutView(int layoutId);
+
+    /**
+     * View 类型
+     *
+     * @return
+     */
+    ViewType getViewType();
 }

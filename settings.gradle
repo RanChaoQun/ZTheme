@@ -1,1 +1,1 @@
-include ':app', ':lib_theme', ':theme_dark'
+include ':app', ':lib_theme', ':theme_dark', ':theme_light', ':lib_app_modules'

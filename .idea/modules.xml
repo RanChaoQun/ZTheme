@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZTheme.iml" filepath="$PROJECT_DIR$/ZTheme.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_app_modules/lib_app_modules.iml" filepath="$PROJECT_DIR$/lib_app_modules/lib_app_modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_theme/lib_theme.iml" filepath="$PROJECT_DIR$/lib_theme/lib_theme.iml" />
       <module fileurl="file://$PROJECT_DIR$/theme_dark/theme_dark.iml" filepath="$PROJECT_DIR$/theme_dark/theme_dark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theme_light/theme_light.iml" filepath="$PROJECT_DIR$/theme_light/theme_light.iml" />
     </modules>
   </component>
 </project>

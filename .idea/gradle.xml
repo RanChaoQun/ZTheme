@@ -9,8 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib_app_modules" />
             <option value="$PROJECT_DIR$/lib_theme" />
             <option value="$PROJECT_DIR$/theme_dark" />
+            <option value="$PROJECT_DIR$/theme_light" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

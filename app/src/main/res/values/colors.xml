@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="font_title">#333333</color>
+    <color name="font_content">#666666</color>
+    <color name="font_line">#333333</color>
+    <color name="font_desc">#999999</color>
 </resources>
