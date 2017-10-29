@@ -25,6 +25,8 @@ public abstract class ZThemeView implements IThemeView {
      */
     private ZTheme zTheme;
 
+    private View mRoot;
+
     public ZThemeView(Context context, ZTheme iTheme) {
         this.context = context;
         this.zTheme = iTheme;
@@ -36,14 +38,37 @@ public abstract class ZThemeView implements IThemeView {
     }
 
     @Override
+    public View getView() {
+        return mRoot;
+    }
+
+    @Override
     public ZTheme getTheme() {
         return zTheme;
     }
 
     @Override
-    public View inflateLayoutView(int layoutId) {
+    public final View inflateLayoutView(int layoutId) {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         return inflater.inflate(context.getResources().getLayout(layoutId), null);
     }
 
+    @Override
+    public void setContentView(View view) {
+        mRoot = view;
+    }
+
+    @Override
+    public void setContentView(int layoutResID) {
+        mRoot = inflateLayoutView(layoutResID);
+    }
+
+    @Override
+    public View findViewById(int viewId) {
+        if (getView() == null) {
+            return null;
+        } else {
+            return getView().findViewById(viewId);
+        }
+    }
 }

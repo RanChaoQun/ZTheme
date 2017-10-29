@@ -1,17 +1,30 @@
 package com.rxx.phonemate.lib.modules.login;
 
+import android.content.Context;
+
+import com.rxx.base.base.BaseView;
+import com.rxx.theme.ZTheme;
+
 /**
  * @author 冉超群
  * @date 2017/10/26-15:33
  * @desc 登陆页面
  */
-public interface ILoginView {
+public abstract class ILoginView extends BaseView<ILoginController>{
 
-    String getAccountName();
+    public ILoginView(Context context, ZTheme iTheme) {
+        super(context, iTheme);
+    }
 
-    String getPassword();
+    public ILoginView(Context context) {
+        super(context);
+    }
 
-    void showLogin();
+    public abstract String getAccountName();
 
-    void showInput();
+    public abstract String getPassword();
+
+    public abstract void showLogin();
+
+    public abstract void showInput();
 }

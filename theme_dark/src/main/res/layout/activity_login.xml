@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/comm_padding">
+
+    <ProgressBar
+        android:id="@+id/mLoginProgressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/mLayoutAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:text="用户名:"
+            android:textColor="@color/font_desc"
+            android:textSize="@dimen/font_content" />
+
+        <EditText
+            android:id="@+id/mEditTextAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入用户名"
+            android:padding="@dimen/comm_padding"
+            android:textColor="@color/font_desc"
+            android:textColorHint="@color/font_content"
+            android:textSize="@dimen/font_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="密码:"
+            android:textColor="@color/font_desc"
+            android:textSize="@dimen/font_content" />
+
+        <EditText
+            android:id="@+id/mEditTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="@dimen/comm_padding"
+            android:textColor="@color/font_desc"
+            android:textColorHint="@color/font_content"
+            android:textSize="@dimen/font_content" />
+
+        <Button
+            android:id="@+id/mButtonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:text="登陆"
+            android:textColor="@color/font_desc"
+            android:textSize="@dimen/font_content" />
+    </LinearLayout>
+</FrameLayout>

@@ -70,6 +70,9 @@ public class ZTheme {
      */
     private Map<String, IThemeView> themeViews = new HashMap<>();
 
+    /**
+     * 自定义加载ThemeView
+     */
     private Factory factory;
 
     public ZTheme(Context baseContext, String path, DexClassLoader themeClassLoader) {
@@ -293,4 +296,22 @@ public class ZTheme {
     public interface Factory {
         IThemeView getThemeView(String className);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof ZTheme)) {
+            return false;
+        }
+
+        ZTheme zTheme = (ZTheme) o;
+
+        if (getThemePath() != null ? !getThemePath().equals(zTheme.getThemePath()) : zTheme.getThemePath() != null) {
+            return false;
+        }
+        return themeLibraryPath != null ? themeLibraryPath.equals(zTheme.themeLibraryPath) : zTheme.themeLibraryPath == null;
+    }
+
 }

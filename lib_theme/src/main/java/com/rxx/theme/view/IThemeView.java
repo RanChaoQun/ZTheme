@@ -40,10 +40,21 @@ public interface IThemeView {
      */
     View inflateLayoutView(int layoutId);
 
+    void setContentView(View view);
+
+    void setContentView(int layoutResID);
+
     /**
      * View 类型
      *
      * @return
      */
     ViewType getViewType();
+
+    /**
+     * 加载控件
+     * @param viewId
+     * @return
+     */
+    View findViewById(int viewId);
 }
