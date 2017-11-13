@@ -11,5 +11,7 @@
     <color name="font_line">#333333</color>
     <color name="font_desc">#999999</color>
     <color name="colorLoginChange">#993F51B5</color>
+    <color name="colorLoginChangePress">#553F51B5</color>
     <color name="colorLoginButton">#99FF4081</color>
+    <color name="colorLoginButtonPress">#55FF4081</color>
 </resources>

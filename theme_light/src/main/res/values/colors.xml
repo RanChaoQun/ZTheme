@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPink">#FF4081</color>
+    <color name="colorPinkPress">#66FF4081</color>
     <color name="colorLoginBg">#018fcd</color>
+    <color name="colorLoginBgPress">#66018fcd</color>
 </resources>

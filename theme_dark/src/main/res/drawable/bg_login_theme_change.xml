@@ -2,17 +2,15 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="false">
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorPink" />
-            <corners android:radius="20dp" />
+            <solid android:color="@color/colorLoginChange"/>
+            <corners android:radius="8dp"/>
         </shape>
-
     </item>
 
     <item android:state_pressed="true">
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorPinkPress" />
-            <corners android:radius="8dp" />
+            <solid android:color="@color/colorLoginChangePress"/>
+            <corners android:radius="8dp"/>
         </shape>
-
     </item>
 </selector>
