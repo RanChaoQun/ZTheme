@@ -1,5 +1,5 @@
 
-![点击查看Demo演示](https://gitee.com/ranchaoqun/ZTheme/blob/master/Screenrecorder-2017-11-13-14-58-58-832.gif "Demo效果图")
+![Demo演示效果图](https://gitee.com/uploads/images/2017/1113/165131_4318c82f_414444.gif "20171113165139.gif")
 - ZTheme 使用示例
 1.  创建ZTheme方法声明
 
