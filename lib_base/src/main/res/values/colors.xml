@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorWhiteT99">#99FFFFFF</color>
+    <color name="font_title">#333333</color>
+    <color name="font_content">#666666</color>
+    <color name="font_line">#333333</color>
+    <color name="font_desc">#999999</color>
+    <color name="colorLoginChange">#993F51B5</color>
+    <color name="colorLoginButton">#99FF4081</color>
+</resources>

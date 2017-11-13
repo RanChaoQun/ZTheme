@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="comm_padding">16dp</dimen>
+    
+    <dimen name="font_content">16dp</dimen>
+    <dimen name="font_title">18dp</dimen>
+    <dimen name="font_desc">14dp</dimen>
+</resources>

@@ -75,6 +75,7 @@ public class ZTheme {
      */
     private Factory factory;
 
+
     public ZTheme(Context baseContext, String path, DexClassLoader themeClassLoader) {
         this(baseContext, path, null, themeClassLoader);
     }
@@ -85,6 +86,7 @@ public class ZTheme {
         this.themeLibraryPath = libraryPath;
         this.themeClassLoader = themeClassLoader;
     }
+
 
     /**
      * 指定主题是否缓存
@@ -245,8 +247,23 @@ public class ZTheme {
         return true;
     }
 
+    /**
+     * Default
+     * @param className
+     * @return
+     */
     public IThemeView getThemeView(String className) {
-        if (viewIsCached(className)) {
+        return getThemeView(className, false);
+    }
+
+    /**
+     * 是否使用缓存
+     * @param className view 类名
+     * @param cached 是否使用缓存
+     * @return
+     */
+    public IThemeView getThemeView(String className, boolean cached) {
+        if (cached && viewIsCached(className)) {
             return themeViews.get(className);
         }
         IThemeView tIThemeView = null;
@@ -263,11 +280,11 @@ public class ZTheme {
                 e.printStackTrace();
             }
         }
-        if (tIThemeView != null) {
+        if (cached && tIThemeView != null && !themeViews.containsKey(className)) {
             themeViews.put(className, tIThemeView);
-            return tIThemeView;
+
         }
-        return null;
+        return tIThemeView;
     }
 
     public DexClassLoader getDexClassLoader() {

@@ -19,6 +19,17 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug{
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile =new File(buildDir,"theme_light.apk")
+                    println "output.outputFile:"+output.outputFile
+                    println "buildDir:"+buildDir+",projectDir："+projectDir+"，rootDir："+rootDir
+                    println output.outputFile
+                    println "============== end"
+                }
+            }
+        }
     }
 }
 

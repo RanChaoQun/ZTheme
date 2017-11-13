@@ -16,10 +16,6 @@ public abstract class ILoginView extends BaseView<ILoginController>{
         super(context, iTheme);
     }
 
-    public ILoginView(Context context) {
-        super(context);
-    }
-
     public abstract String getAccountName();
 
     public abstract String getPassword();

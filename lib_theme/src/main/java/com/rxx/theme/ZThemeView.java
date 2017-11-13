@@ -60,7 +60,7 @@ public abstract class ZThemeView implements IThemeView {
 
     @Override
     public void setContentView(int layoutResID) {
-        mRoot = inflateLayoutView(layoutResID);
+        setContentView(inflateLayoutView(layoutResID));
     }
 
     @Override

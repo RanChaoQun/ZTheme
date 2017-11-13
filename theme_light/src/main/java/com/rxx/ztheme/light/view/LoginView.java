@@ -1,4 +1,4 @@
-package com.rxx.ztheme.light;
+package com.rxx.ztheme.light.view;
 
 import android.content.Context;
 import android.view.View;
@@ -8,8 +8,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.rxx.phonemate.lib.modules.login.ILoginView;
+import com.rxx.theme.ZTheme;
 import com.rxx.theme.view.ViewType;
-import com.rxx.ztheme.dark.R;
+import com.rxx.ztheme.light.R;
 
 /**
  * @author 冉超群
@@ -28,14 +29,20 @@ public class LoginView extends ILoginView implements View.OnClickListener {
 
     private Button mButtonLogin;
 
-    public LoginView(Context context) {
-        super(context);
+    private Button mButtonChange;
+
+    public LoginView(Context context, ZTheme zTheme) {
+        super(context, zTheme);
         setContentView(R.layout.activity_login);
         mLayoutAccount = (LinearLayout) findViewById(R.id.mLayoutAccount);
         mLoginProgressBar = (ProgressBar) findViewById(R.id.mLoginProgressBar);
         mEditTextAccount = (EditText) findViewById(R.id.mEditTextAccount);
         mEditTextPassword = (EditText) findViewById(R.id.mEditTextPassword);
         mButtonLogin = (Button) findViewById(R.id.mButtonLogin);
+        mButtonChange = (Button) findViewById(R.id.mButtonChange);
+
+        mButtonLogin.setOnClickListener(this);
+        mButtonChange.setOnClickListener(this);
     }
 
     @Override
@@ -67,8 +74,10 @@ public class LoginView extends ILoginView implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if (mController == null || mController.isDestroyed()) {
+        if (view == mButtonLogin && mController != null && !mController.isDestroyed()) {
             mController.doLogin();
+        } else if (view == mButtonChange && mController != null && !mController.isDestroyed()) {
+            mController.doChangeTheme();
         }
     }
 
