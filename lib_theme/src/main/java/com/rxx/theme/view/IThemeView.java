@@ -20,7 +20,7 @@ public interface IThemeView {
     Context getContext();
 
     /**
-     * 获取主题View
+     * 获取View
      *
      * @return
      */
