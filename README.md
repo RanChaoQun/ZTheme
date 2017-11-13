@@ -55,7 +55,7 @@ public abstract class ILoginController extends BaseActivity<ILoginView,ILoginCon
 }
 ```
 
-2. Controller 实现 LoginActivity 
+2. Controller 实现 ： LoginActivity 
 ```
 public class LoginActivity extends ILoginController {
 
