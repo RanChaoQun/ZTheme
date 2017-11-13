@@ -1,5 +1,5 @@
 
-![Demo演示效果图](https://gitee.com/uploads/images/2017/1113/165131_4318c82f_414444.gif "20171113165139.gif")
+![Demo演示](https://gitee.com/uploads/images/2017/1113/165926_a57bc77c_414444.gif "aaa.gif")
 - ZTheme 使用示例
 1.  创建ZTheme方法声明
 
