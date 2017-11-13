@@ -1,6 +1,7 @@
 ZTheme是一款小巧的Android换肤框架，实现原理是动态加载APK，对基于MVP或MVC分层设计的View层进行替换，实现切换主题皮肤的功能。
 
 ![Demo演示](https://gitee.com/uploads/images/2017/1113/165926_a57bc77c_414444.gif "aaa.gif")
+![Demo演示](https://gitee.com/uploads/images/2017/1113/200304_841420aa_414444.gif "15105745765a0989f0f07b3.gif")
 
 - ZTheme 使用示例
 
