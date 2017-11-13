@@ -1,5 +1,5 @@
 
-[惯例先上图：](https://gitee.com/ranchaoqun/ZTheme/blob/master/Screenrecorder-2017-11-13-14-58-58-832.gif)
+![惯例先上图](https://gitee.com/ranchaoqun/ZTheme/blob/master/Screenrecorder-2017-11-13-14-58-58-832.gif "Demo效果图")
 - ZTheme 使用示例
 1.  创建ZTheme方法声明
 
